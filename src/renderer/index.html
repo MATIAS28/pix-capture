@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>PixCapture📷</title>
+</head>
+<body>
+    <div class="header">
+      <h1 class="title">PixCapture 📷</h1>
+      <div>
+        <h2>mi portafolio</h2>
+      </div>
+    </div>
+
+    <div class="description">
+      <h3 class="subtitle">Busca <b>Captura</b> Descarga</h3>
+      <p>PixCapture es una herramienta avanzada diseñada para capturar y guardar 
+        instantáneas de páginas web completas con solo unos toques. Ideal para 
+        profesionales, estudiantes y cualquier persona que necesite guardar y 
+        compartir contenido web de manera rápida y eficiente.
+      </p>
+    </div>
+    
+    <div class="searchbar">
+      <div class="search">
+        <img class="searchicon" src="../assets/searchicon.png" alt="" srcset="">
+        <input type="text" id="searchInput">
+      </div>
+      <button class="searchButton" type="button">BUSCAR</button>
+    </div>
+
+</body>
+</html>

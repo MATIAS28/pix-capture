@@ -1,0 +1,78 @@
+body{
+    background-color: #020203;
+}
+
+h2, h3, p{
+    color: white;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description{
+    text-align: center;
+}
+
+
+.title{
+    color: #3188FC;
+}
+
+
+
+/*----------Search styles-------*/
+.searchbar{
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    background-color: #19191B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 0.5rem;
+}
+
+button {
+    all: unset; /* Elimina todos los estilos inherentes */
+    display: inline-block; /* Restaura el comportamiento de bloque en línea */
+    cursor: pointer; /* Agrega el puntero para el botón */
+  }
+
+input[type="text"] {
+    -webkit-appearance: none; /* Elimina los estilos por defecto en navegadores basados en WebKit */
+    appearance: none; /* Elimina los estilos por defecto en otros navegadores */
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    outline: none; /* Elimina el borde de enfoque */
+  }
+
+#searchInput{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.searchicon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.searchButton{
+    background-color: transparent;
+    color: white;
+}

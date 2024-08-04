@@ -1,0 +1,14 @@
+{
+  "name": "challenge-1",
+  "version": "1.0.0",
+  "main": "src/main/main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "author": "Matias Muñoz",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^31.3.1"
+  }
+}
