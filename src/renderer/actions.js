@@ -46,6 +46,9 @@ function downloadScreenshot (){
     const format = document.getElementById('format').value
     const url = document.getElementById('searchInput').value
     
+    //Dispara el toast
+    handlerToast('Espera...')
+
     //Emite el evento descargar 
     ipcRenderer.send('capture-screenshot', url, format);
 }
@@ -73,7 +76,7 @@ function handlerToast (msg){
     setTimeout(() => {
       toast.remove();
     }, 300);
-  }, 3000);
+  }, 5000);
 }
 
 //
