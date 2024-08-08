@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    object-src 'none';
+    ">
+
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../assets/css/seachBar.css">
+    <link rel="stylesheet" href="../assets/css/download.css">
+    <link rel="stylesheet" href="../assets/css/loader.css">
+    <link rel="stylesheet" href="../assets/css/toast.css">
+
+    <script src="./actions.js"></script>
 
     <title>PixCapture📷</title>
 </head>
@@ -19,26 +31,55 @@
     <div class="header">
       <h1 class="title">PixCapture 📷</h1>
       <div>
-        <h2>mi portafolio</h2>
+        <button id="portafolio">
+          <h2>Mi portafolio</h2>
+          <img src="../assets/icons/icons8-flecha-64.png" alt="">
+        </button>
       </div>
     </div>
 
-    <div class="description">
-      <h3 class="subtitle">Busca <b>Captura</b> Descarga</h3>
-      <p>PixCapture es una herramienta avanzada diseñada para capturar y guardar 
-        instantáneas de páginas web completas con solo unos toques. Ideal para 
-        profesionales, estudiantes y cualquier persona que necesite guardar y 
-        compartir contenido web de manera rápida y eficiente.
-      </p>
-    </div>
-    
-    <div class="searchbar">
-      <div class="search">
-        <img class="searchicon" src="../assets/searchicon.png" alt="" srcset="">
-        <input type="text" id="searchInput">
+    <div class="container">
+      <div class="description">
+        <h3 class="subtitle">Busca <b>Captura</b> Descarga</h3>
+        <p>PixCapture es una herramienta avanzada diseñada para capturar y guardar 
+          instantáneas de páginas web completas con solo unos toques. Ideal para 
+          profesionales, estudiantes y cualquier persona que necesite guardar y 
+          compartir contenido web de manera rápida y eficiente.
+        </p>
       </div>
-      <button class="searchButton" type="button">BUSCAR</button>
+      
+      <div class="searchbar">
+        <div class="search">
+          <img class="searchicon" src="../assets/icons/searchicon.png" alt="" srcset="">
+          <input type="text" id="searchInput" placeholder="Intruduce una url"/>
+        </div>
+        <button id="searchButton" class="searchButton" type="button">BUSCAR</button>
+      </div>
+  
+      
+
+        <div id="loader-container">
+          <div class="loader"></div>
+        </div>
+
+      <div>
+        <div id="img-preview"></div>
+  
+        <div class="download-container">
+          <div id="download-section" class="download-opt">
+            <button id="download-button">Descargar</button>
+            <select id="format">
+              <option value="pdf" selected>PDF</option>
+              <option value="png">PNG</option>
+            </select>
+          </div>
+        </div>
+
+      </div>    
+
     </div>
+
+    <div id="toast-container"></div>
 
 </body>
 </html>

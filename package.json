@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "electron": "^31.3.1"
+  },
+  "dependencies": {
+    "puppeteer": "^22.15.0"
   }
 }

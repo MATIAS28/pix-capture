@@ -1,0 +1,54 @@
+.download-container{
+    display: flex;
+    justify-content: end;
+    width: 75%;
+    margin: auto;
+}
+
+.download-opt{
+    background-color: #19191B;
+    width: fit-content;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+}
+
+.download-opt button{
+    padding: 0.5rem;
+    color: white;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    
+    font-size: 0.75rem; 
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+.download-opt button:hover{
+    background-color: #3b3b3f;
+}
+
+.download-opt select:focus-visible{
+    outline-offset: none;
+}
+
+.download-opt select{
+    all: unset;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    appearance: auto;
+    -webkit-appearance: menulist; 
+    -moz-appearance: menulist;
+
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 300; 
+}
+
+.download-opt select:hover{
+    cursor: pointer;
+    background-color: #3b3b3f;
+}

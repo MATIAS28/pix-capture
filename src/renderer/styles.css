@@ -1,4 +1,5 @@
 body{
+    font-family: "Roboto", sans-serif;
     background-color: #020203;
 }
 
@@ -6,11 +7,25 @@ h2, h3, p{
     color: white;
 }
 
+h3 {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 200;
+}
+
+b{
+    color: #3188FC;
+}
+
 .header{
-    width: 100%;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 
 .description{
@@ -19,60 +34,40 @@ h2, h3, p{
 
 
 .title{
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
     color: #3188FC;
 }
 
 
-
-/*----------Search styles-------*/
-.searchbar{
-    border-radius: 0.5rem;
-    padding: 0.7rem;
-    background-color: #19191B;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container{
     width: 75%;
     margin: auto;
-    margin-top: 2rem;
 }
 
-.search{
+#portafolio{
     display: flex;
     align-items: center;
-    width: 100%;
-    margin-right: 0.5rem;
 }
 
-button {
-    all: unset; /* Elimina todos los estilos inherentes */
-    display: inline-block; /* Restaura el comportamiento de bloque en línea */
-    cursor: pointer; /* Agrega el puntero para el botón */
-  }
-
-input[type="text"] {
-    -webkit-appearance: none; /* Elimina los estilos por defecto en navegadores basados en WebKit */
-    appearance: none; /* Elimina los estilos por defecto en otros navegadores */
-    border: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    outline: none; /* Elimina el borde de enfoque */
-  }
-
-#searchInput{
-    background-color: transparent;
-    border: none;
-    width: 100%;
-}
-
-.searchicon{
+#portafolio img{
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 0.5rem;
+    margin-left: 5px;
 }
 
-.searchButton{
-    background-color: transparent;
-    color: white;
+/*Img preview*/
+
+#img-preview{
+    display: flex;
+    justify-content: center;
+}
+
+#preview{
+    margin-top: 2rem;
+    border-radius: 0.75rem;
+    width: 75%;
+    height: 20rem;
+    margin: 0px auto;
+    margin-top: 2rem;
 }
